@@ -1,0 +1,6 @@
+[book]
+authors = ["Nhat Ha Pham"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Final Assignment Diagrams"
