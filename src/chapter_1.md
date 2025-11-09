@@ -2,7 +2,7 @@
 ```plantuml
 @startuml
     [*] --> Idle
-    Idle --> HeatingWater : Get off bed
+    Idle --> HeatingWater : Start
     HeatingWater --> Grinding : WaterHot
     Grinding --> Brewing : BeansGround
     Brewing --> Done : BrewComplete
