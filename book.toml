@@ -6,4 +6,4 @@ src = "src"
 title = "Final Assignment Diagrams"
 
 [preprocessor.plantuml]
-plantuml-cmd="http:localhost:8080\\"
+plantuml-cmd="http:localhost:8080"
