@@ -1,17 +1,21 @@
 # Chapter 3: Task communication
 ```plantuml
 @startuml
-participant CoffeeTask
+participant CoffeeMaking
 participant GVL
-participant ToastTask
+participant ToastMaking
 
-CoffeeTask -> GVL: CoffeeState = HeatingWater
-ToastTask -> GVL: ToastState = LoadingBread
+CoffeeMaking -> GVL: CoffeeState = HeatingWater
+GVL -> ToastMaking: CoffeeState = 1
+ToastMaking -> GVL: ToastState = LoadingBread
+ToastMaking -> GVL: ToastState = LeverDown
 
-ToastTask -> GVL: JamStatus = false
-GVL --> CoffeeTask: ToastState
+GVL -> CoffeeMaking: ToastState = 1 or 2
 
-CoffeeTask -> GVL: WaterHot = true
-GVL --> ToastTask: CoffeeState
+CoffeeMaking -> GVL: WaterHot = true
+CoffeeMaking -> GVL: GrindingDone = true
+CoffeeMaking -> GVL: BrewingDone = true
+ToastMaking -> GVL: ToastState = ToastReady
+CoffeeMaking -> GVL: CoffeeState = CoffeeReady
 @enduml
 ```
