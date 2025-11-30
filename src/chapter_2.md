@@ -4,7 +4,7 @@
 [*] --> Idle
 Idle --> LoadingBread : BreadInserted
 LoadingBread --> Toasting : LeverDown
-Toasting --> Done : TimerElapsed
+Toasting --> Done : Wait 5s
 Toasting --> Error : JamDetected
 Error --> Idle : Reset
 Done --> [*]
