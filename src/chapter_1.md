@@ -6,8 +6,8 @@
     StartCoffee --> HeatingWater : Press hot water
     HeatingWater --> WaterHot : Wait 5s
     WaterHot --> Grinding : Press Grinding
-    Grinding --> Grind Done : Wait 5s
-    Grind Done --> Brewing : Press Brewing
+    Grinding --> GrindDone : Wait 5s
+    GrindDone --> Brewing : Press Brewing
     Brewing --> Done : wait 5s
     Brewing --> Error : LowWaterLevel
     Error --> Idle : Reset
