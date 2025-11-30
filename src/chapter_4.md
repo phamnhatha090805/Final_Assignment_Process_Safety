@@ -3,7 +3,7 @@
 The breakfast routine always starts with **Wake Up** and **Start Coffee**.  
 Users must wait **5 seconds** after pressing the **Hot Water**, **Grinding**, and **Brewing** buttons in the visualization.  
 
-Users can only grind and brew the coffee if the **toasting state is equal to 1 or 2**, meaning the bread must be inserted and the **Lever Down** button pressed.  
+Users can only grind and brew the coffee if the **toasting state is equal to 1 or 2**, meaning the bread must be inserted and the **Lever Down** button pressed **without error**.  
 
 There is also an **Error** button. If an error occurs, a **red light stays on** until users reset the system. To view the unhappy flow, users must press the error button at the beginning of the process.
 
@@ -19,5 +19,5 @@ There is also an **Error** button. If an error occurs, a **red light stays on** 
 ## **Remarks**
 - The system always starts with waking up and starting to make coffee.  
 - Users can only start making toast **after pressing Hot Water**.  
-- Users can only start grinding and brewing coffee **after inserting bread and pressing the Lever Down button**.  
+- Users can only start grinding and brewing coffee **after inserting bread and pressing the Lever Down button** without toasting error.  
 - The **Reset** button resets **both** processes.
