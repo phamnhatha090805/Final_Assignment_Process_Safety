@@ -2,7 +2,7 @@
 ```plantuml
 @startuml
     [*] --> Idle
-    Idle --> HeatingWater : Get off bed
+    Idle --> HeatingWater : Get off bed and Start making coffee
     HeatingWater --> WaterHot : Wait 5s
     WaterHot --> Grinding : Press Grinding
     Grinding --> GrindDone : Wait 5s
