@@ -2,11 +2,12 @@
 ```plantuml
 @startuml
     [*] --> Idle
-    Idle --> HeatingWater : Get off bed and Start making coffee
-    HeatingWater --> WaterHot : Wait 5s
-    WaterHot --> Grinding : Press Grinding
-    Grinding --> GrindDone : Wait 5s
-    GrindDone --> Brewing : Press Brewing
+    Idle --> Start Coffee : Get off bed
+    Start Coffee --> Heating Water : Press hot water
+    Heating Water --> Water Hot : Wait 5s
+    Water Hot --> Grinding : Press Grinding
+    Grinding --> Grind Done : Wait 5s
+    Grind Done --> Brewing : Press Brewing
     Brewing --> Done : wait 5s
     Brewing --> Error : LowWaterLevel
     Error --> Idle : Reset
